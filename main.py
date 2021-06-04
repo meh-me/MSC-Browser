@@ -42,7 +42,7 @@ class MainWindow(QMainWindow):
 
     def navigate_to_url(self):
         url = self.url_bar.text()
-        self.browser.setUrl(QURL(url))
+        self.browser.setUrl(QUrl(url))
 
     def update_url(self, q):
         self.url_bar.setText(q.toString())
